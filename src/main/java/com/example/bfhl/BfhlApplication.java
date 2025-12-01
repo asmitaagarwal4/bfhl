@@ -107,7 +107,7 @@ public class BfhlApplication implements CommandLineRunner {
 
             HttpHeaders headers2 = new HttpHeaders();
             headers2.setContentType(MediaType.APPLICATION_JSON);
-            headers2.set("Authorization", "Bearer " + body1.getAccessToken());
+            headers2.set("Authorization", body1.getAccessToken());
 
             HttpEntity<SecondApiRequest> entity2 = new HttpEntity<>(request2, headers2);
 
